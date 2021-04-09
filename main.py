@@ -8,7 +8,8 @@ class AnimeBot(commands.Bot):
     def __init__(self, **kwargs):
         super().__init__(**kwargs)
         self.BotToken = os.getenv("TOKEN")
-        self.server_invite = "https://dsc.gg/animeserver"
+        self.server_invite = "https://discord.gg/SgZdhZcKua"
+        self.vote_url      = "https://top.gg/servers/804284010900750367"
         self.welcome_channel = self.get_channel(804284011371167795)
         
     async def on_connect(self):
