@@ -1,6 +1,7 @@
 import discord
 from discord.ext import commands
 from datetime import datetime as dt
+from Utility import HelpCommand
 import os
 
 class AnimeBot(commands.Bot):
@@ -49,7 +50,7 @@ class AnimeBot(commands.Bot):
      command_prefix = "?",
      intents = discord.Intents.all(),
      case_insensitive = True, 
-     help_command = None, 
+     help_command = HelpCommand(),
      description = "A simple bot for an anime server"
  )
 
